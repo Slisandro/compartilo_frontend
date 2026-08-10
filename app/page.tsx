@@ -35,7 +35,7 @@ export default function Home() {
           muted
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/bg-dashboard.mp4" type="video/mp4" />
+          <source src="url(https://www.pexels.com/es-es/download/video/5417884/)" type="video/mp4" />
         </video>
 
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white/80 to-transparent" />
