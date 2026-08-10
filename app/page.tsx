@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CircleUser, Leaf, PiggyBank, Search, ShieldCheck, Signpost, User } from "lucide-react";
+import { CircleUser, Leaf, PiggyBank, Search, ShieldCheck, Signpost } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -28,15 +28,13 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="h-[calc(100vh-64px)] w-full max-w-screen relative flex items-center justify-center">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="url(https://www.pexels.com/es-es/download/video/5417884/)" type="video/mp4" />
-        </video>
+      <section className="h-[calc(100vh-64px)] w-full max-w-screen relative flex items-center justify-center overflow-hidden">
+        <iframe
+          src="https://player.vimeo.com/video/1216862555?background=1&autoplay=1&loop=1&muted=1"
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[56.25vw] min-h-full w-[177.78vh] min-w-full -translate-x-1/2 -translate-y-1/2 border-0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          title="Compartilo hero video"
+        />
 
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white/80 to-transparent" />
 
